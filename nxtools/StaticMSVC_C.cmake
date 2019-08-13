@@ -1,0 +1,4 @@
+if (MSVC)
+	set(CMAKE_C_FLAGS_DEBUG_INIT "/D_DEBUG /MTd /Zi /Ob0 /Od /RTC1")
+	set(CMAKE_C_FLAGS_RELEASE_INIT "/MT /Ox /D NDEBUG")
+endif()
